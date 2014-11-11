@@ -58,7 +58,7 @@ plt.ylabel('U')
 plt.xlabel('x')
 plt.title('t = '+ repr(t)) 
 plt.axis([x1, x2, y1, y2])
-plt.savefig(directory +'/t'+repr(numb)+'.png')
+plt.savefig(directory +'/t'+'%0*d' % (3, numb)+'.png')
 
 step=0
 stepSize = int(tend/dt/10)
@@ -80,7 +80,7 @@ while t<=tend :
 		plt.xlabel('x')
 		plt.title('t = '+ repr(t))
 		plt.axis([x1, x2, y1, y2]) 
-		plt.savefig(directory +'/t'+repr(numb)+'.png')
+		plt.savefig(directory +'/t'+'%0*d' % (3, numb)+'.png')
 		
         	
 
