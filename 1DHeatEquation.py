@@ -67,7 +67,7 @@ print s
 #Time loop
 while t<=tend :
 	t=t+dt
-	uold = u_arr
+	uold = u_arr[:]
 	for i in range(1,N-1):
 		u_arr[i] = l*uold[i-1]+(1-2.*l)*uold[i]+l*uold[i+1]
         step=step+1
