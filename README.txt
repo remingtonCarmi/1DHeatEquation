@@ -1,9 +1,8 @@
 Solve the 1D heat equation
-u_t-1/Pe* (u_xx+ u_yy) = 0 for x in 0  2pi y in 0 2pi
+u_t-1/Pe* (u_xx) = 0 for x in 0  2pi y in 0 2pi
 periodic BC 
-u(x=0,y,t) = u(x=2pi,y,t)
-u(x,y=0,t) = u(x,y=2pi,t)
-u(x,y,0) = cos(x)+sin(y)
+u(x=0,y,t) = u(x=2pi,t)
+u(x,0) = cos(x)
 
 Depenencies: 
  matplotlib.pyplot as plt (for plotting)
